@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JP Sports Data Hub</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+header {
+    background: #172554;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+nav {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #172554;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+
+.search-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.ad {
+    background: #e5e7eb;
+    border: 1px dashed #888;
+    text-align: center;
+    padding: 25px;
+    margin: 20px 0;
+    color: #555;
+}
+
+.welcome,
+.section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.card h2 {
+    color: #172554;
+}
+
+.card a {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+th {
+    background: #172554;
+    color: white;
+}
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+@media(max-width: 700px) {
+    .search-box input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>JP Sports Data Hub</h1>
+    <p>Sports Data • Records • Research • Updates</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#athletes">Athletes</a>
+    <a href="#records">Records</a>
+    <a href="#research">Research</a>
+    <a href="#updates">Updates</a>
+</nav>
+
+<div class="container">
+
+<div class="search-box">
+    <input type="text" id="searchInput"
+    placeholder="Search athletes, records, sports...">
+
+    <button onclick="searchData()">Search</button>
+</div>
+
+<div class="ad">
+    ADVERTISEMENT
+</div>
+
+<section id="home" class="welcome">
+
+<h2>Welcome to JP Sports Data Hub</h2>
+
+<p>
+JP Sports Data Hub is a sports information and research
+platform for collecting, organising and sharing sports data.
+</p>
+
+<p>
+The platform will contain athlete information, sports records,
+research data and sports updates.
+</p>
+
+</section>
+
+<div class="cards">
+
+<div class="card">
+<h2>👤 Athletes</h2>
+<p>
+Athlete profiles, teams, achievements and statistics.
+</p>
+<a href="#athletes">View Athletes</a>
+</div>
+
+<div class="card">
+<h2>🏆 Records</h2>
+<p>
+Sports records and historical performances.
+</p>
+<a href="#records">View Records</a>
+</div>
+
+<div class="card">
+<h2>📊 Research Data</h2>
+<p>
+Sports research data and athlete test results.
+</p>
+<a href="#research">View Research</a>
+</div>
+
+<div class="card">
+<h2>📰 Sports Updates</h2>
+<p>
+Sports news, stories and latest updates.
+</p>
+<a href="#updates">View Updates</a>
+</div>
+
+</div>
+
+<div class="ad">
+    ADVERTISEMENT
+</div>
+
+<section id="athletes" class="section">
+
+<h2>👤 Athletes</h2>
+
+<p>
+Athlete profiles will be added here.
+</p>
+
+<ul>
+<li>Football</li>
+<li>Netball</li>
+<li>Cricket</li>
+<li>Athletics</li>
+<li>Basketball</li>
+</ul>
+
+</section>
+
+<section id="records" class="section">
+
+<h2>🏆 Sports Records</h2>
+
+<table>
+
+<tr>
+<th>Record</th>
+<th>Athlete</th>
+<th>Sport</th>
+<th>Result</th>
+<th>Year</th>
+</tr>
+
+<tr>
+<td>30m Sprint</td>
+<td>Example Athlete</td>
+<td>Athletics</td>
+<td>4.21 seconds</td>
+<td>2026</td>
+</tr>
+
+</table>
+
+</section>
+
+<section id="research" class="section">
+
+<h2>📊 Research Data</h2>
+
+<p>
+Your research data will be stored and displayed here.
+</p>
+
+<table>
+
+<tr>
+<th>Athlete</th>
+<th>Sport</th>
+<th>Test</th>
+<th>Result</th>
+</tr>
+
+<tr>
+<td>Example Athlete</td>
+<td>Football</td>
+<td>30m Sprint</td>
+<td>4.52 seconds</td>
+</tr>
+
+</table>
+
+</section>
+
+<section id="updates" class="section">
+
+<h2>📰 Sports Updates</h2>
+
+<h3>Latest Sports Update</h3>
+
+<p>
+Your sports updates and articles will appear here.
+</p>
+
+</section>
+
+<div class="ad">
+    ADVERTISEMENT
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 JP Sports Data Hub</p>
+<p>Sports Data • Records • Research • Updates</p>
+</footer>
+
+<script>
+
+function searchData() {
+
+    let search =
+    document.getElementById("searchInput").value;
+
+    if (search.trim() === "") {
+        alert("Please enter something to search.");
+        return;
+    }
+
+    alert("You searched for: " + search);
+}
+function addResearchRecord() {
+
+    let athlete = document.getElementById("athleteName").value;
+    let sport = document.getElementById("sportName").value;
+    let test = document.getElementById("testName").value;
+    let result = document.getElementById("resultValue").value;
+    let year = document.getElementById("recordYear").value;
+
+    if (
+        athlete === "" ||
+        sport === "" ||
+        test === "" ||
+        result === "" ||
+        year === ""
+    ) {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    let record = {
+        athlete: athlete,
+        sport: sport,
+        test: test,
+        result: result,
+        year: year
+    };
+
+    let records =
+        JSON.parse(localStorage.getItem("jpSportsRecords")) || [];
+
+    records.push(record);
+
+    localStorage.setItem(
+        "jpSportsRecords",
+        JSON.stringify(records)
+    );
+
+    alert("Record added successfully!");
+
+    document.getElementById("athleteName").value = "";
+    document.getElementById("sportName").value = "";
+    document.getElementById("testName").value = "";
+    document.getElementById("resultValue").value = "";
+    document.getElementById("recordYear").value = "";
+}
+</script>
+<section class="section" id="add-record">
+
+<h2>➕ Add Research Data Record</h2>
+
+<label>Athlete Name</label>
+<input type="text" id="athleteName" placeholder="Enter athlete name">
+
+<label>Sport</label>
+<input type="text" id="sportName" placeholder="e.g. Football">
+
+<label>Test / Event</label>
+<input type="text" id="testName" placeholder="e.g. 30m Sprint">
+
+<label>Result</label>
+<input type="text" id="resultValue" placeholder="e.g. 4.52 seconds">
+
+<label>Year</label>
+<input type="number" id="recordYear" placeholder="2026">
+
+<button onclick="addResearchRecord()">Add Record</button>
+
+</section>
+</body>
+</html>
